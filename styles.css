@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant Garamond', serif;
+    background-color: #fdf6f6;
+}
+
+.invitation {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    background-image: url('images/wedding-pattern.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin: 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.main-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.names {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.names h2 {
+    font-size: 2.2em;
+    color: #d4a5a5;
+}
+
+.invite-text {
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.date-time {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.date, .time {
+    font-size: 1.5em;
+    color: #9e7676;
+    margin: 10px 0;
+}
+
+.countdown {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.countdown h3 {
+    color: #9e7676;
+    margin-bottom: 20px;
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.countdown-item span {
+    font-size: 1.8em;
+    color: #d4a5a5;
+}
+
+.countdown-item .label {
+    font-size: 0.9em;
+    color: #9e7676;
+}
+
+.location, .rsvp {
+    text-align: center;
+    margin: 30px 0;
+    color: #666;
+}
+
+.address {
+    font-size: 1.2em;
+    color: #9e7676;
+    margin: 15px 0;
+}
+
+.contacts {
+    color: #9e7676;
+    font-size: 1.1em;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    font-style: italic;
+    color: #9e7676;
+}
+
+.wedding-rings {
+    max-width: 150px;
+    margin: 20px auto;
+    display: block;
+}
+
+.rings-image {
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* Добавляем декоративные элементы */
+.invitation::before,
+.invitation::after {
+    content: '❦';
+    font-size: 2em;
+    color: #bdc3c7;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.invitation::before {
+    top: 20px;
+}
+
+.invitation::after {
+    bottom: 20px;
+}
+
+/* Адаптивный дизайн */
+@media (max-width: 600px) {
+    .invitation {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .names h2 {
+        font-size: 2.2em;
+    }
+
+    .invite-text,
+    .date,
+    .time,
+    .address {
+        font-size: 1.2em;
+    }
+
+    .countdown-item {
+        min-width: 60px;
+    }
+    
+    .countdown-item span {
+        font-size: 1.5em;
+    }
+    
+    .countdown h3 {
+        font-size: 1.2em;
+    }
+}
+
+.wedding-rings:hover {
+    transform: scale(1.02);
+} 
